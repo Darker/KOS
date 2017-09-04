@@ -1,0 +1,66 @@
+div.subject {
+    padding: 4px;
+    border: 1px solid black;
+    margin: 1px;
+    font-family: "Courier New";
+    cursor: pointer;
+    font-size: 13pt;
+}
+div.subject.hover {
+    outline: 1px solid black;
+}
+div.subject.locked {
+    opacity: .4;
+    cursor: not-allowed;
+    background-color: #777;
+    background-image: url("https://www.kos.cvut.cz/kos/images/lock.gif");
+    background-repeat: no-repeat;
+    /*background-size: */
+    background-position-y: center;
+    background-position-x:left;
+    padding-left: 22px;
+}
+div.subject.locked.capacity {
+    opacity: 1;
+    cursor: pointer;
+}
+div.subject.signed {
+    border-color: green;
+    background-color:greenyellow;
+    font-weight: bold;
+}
+div.subject.signed.locked {
+    opacity: 1;
+    cursor: default;
+}
+div.subject.lecture {
+    border-radius: 5px;
+}
+/**This class determinest that other class
+    is already signed for this lesson's subject
+*/
+div.subject.group-signed {
+    opacity: .8;
+    font-size: 8pt;
+}
+div.subject.error {
+    background-color: red;
+    color:white;
+    border-color: yellow;
+    border-style: dotted;
+}
+div.subject.loading {
+    font-style: italic;
+    background-color: lightblue;
+    border-color: lightblue;
+    color: black;
+    background-image: url("https://www.kos.cvut.cz/kos/images/CVUT/wait02.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+table.zapisator td {
+    vertical-align: top;
+}
